@@ -39,8 +39,8 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #000220;
-  background-color: #ececec;
+  color: rgb(245, 245, 245);
+  background-color: #016abb;
 }
 
 body {
@@ -118,6 +118,7 @@ button:focus-visible {
 }
 
 .fa-solid {
+  color: #016abb;
   margin: 0.5em;
   font-size: 5em;
   animation: spinEase 10s infinite;
@@ -152,10 +153,13 @@ button:focus-visible {
   padding: 2rem;
   border-radius: 12px;
   background: #ffffff;
+  transition: box-shadow 0.3s ease;
   box-shadow: 0 8px 24px rgba(1, 106, 187, 0.15);
 }
 
-
+.appointmentDiv:hover, .hero:hover {
+  box-shadow: 0 10px 28px rgba(1, 106, 187, 0.15); 
+}
 form {
   display: flex;
   flex-direction: column;
@@ -220,10 +224,11 @@ form button:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for pop */
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  transition: box-shadow 1s ease-in-out; /* Smooth hover effect */
   margin: 0 auto;
 }
 .abt:hover {
+    transition: box-shadow 0.4s ease; 
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.397); /* Stronger shadow on hover */
 }
 .abt p {
@@ -260,6 +265,14 @@ form button:hover {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 1s ease;
+
+}
+
+.dentist-card-content:hover {
+    box-shadow: 0 8px 20px rgba(0, 106, 187, 0.1);
 }
 
 .dentist-name {
@@ -303,7 +316,7 @@ form button:hover {
   width: 400px;
   text-align: center;
   font-size: 1.8em;
-  /* text-decoration: underline; */
+  color: #016abb
 }
 .hero p {
   padding: 0;
@@ -356,6 +369,11 @@ form button:hover {
     max-width: 420px;
   }
 
+
+  .abt {
+    width: 575px;
+    border-radius: 12px;
+  }
 }
 
 @media (min-width: 900px) {

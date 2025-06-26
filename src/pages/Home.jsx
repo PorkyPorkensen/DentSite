@@ -7,9 +7,11 @@ import 'aos/dist/aos.css';
 export default function Home(){
     return (
         <section className="meet-the-team">
-            <div className="abt" data-aos="flip-left">
+            <div  data-aos="flip-left">
+                <div className="abt">
                 <img src={dentistryImg} alt="" className="dentist-image" />
                 <p>{bio}</p>
+                </div>
             </div>
             <h2>Meet the Team</h2>
             <div className="team-grid" >
