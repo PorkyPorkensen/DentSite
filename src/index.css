@@ -1,0 +1,365 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(20, 20, 20, 0.87);
+  background-color: #f7f5f5;
+  height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+h2 {
+  font-size: 3.5em;
+}
+.headDiv p {
+  text-align: center;
+  font-size: 1.75em;
+  margin-top: 0;
+}
+
+.logoDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.headDiv h1 {
+  margin-bottom: 0;
+}
+a {
+  font-weight: 500;
+  color: #000220;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #000220;
+  background-color: #ececec;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: repeating-linear-gradient(120deg, #f7f5f5 0%, #eaf6ff 40%, #f7f5f5 60%);
+  color: #101a22;
+  display: flex;
+  flex-direction: column; /* optional: if stacking multiple elements */
+  align-items: center;     /* horizontal centering */
+  min-width: 320px;
+  min-height: 100vh;
+}
+h1, h2, .hero h3 , .headDiv p{
+  font-family: 'Tangerine', cursive;
+}
+
+.headDiv p {
+  padding: 0;
+}
+
+.headDiv h1 {
+  padding: 0;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.headDiv a {
+  font-weight: 500;
+  text-decoration: inherit;
+  border: 1px solid rgb(2, 79, 221);
+  padding: 0.5em 1em;
+  border-radius: 12px;
+}
+
+.headDiv {
+  margin-bottom: 2em;
+}
+
+.header {
+  padding: 0.5em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.conPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-solid {
+  margin: 0.5em;
+  font-size: 5em;
+  animation: spinEase 10s infinite;
+}
+
+.linkDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.meet-the-team {
+  text-align: center;
+  padding: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns:1fr;
+  max-width: 1000px; /* roughly 3 cards wide with spacing */
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.appointmentDiv, .hero {
+  text-align: center;
+  max-width: 320px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(1, 106, 187, 0.15);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointmentDiv input, .appointmentDiv select {
+  background-color: inherit;
+  display: block;
+  width: 200px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  color:rgba(0, 0, 0, 0.603);
+  margin: 0.5em
+
+}
+
+.appointmentDiv select {
+  width: 230px
+}
+
+.appointmentDiv input:hover, .appointmentDiv select:hover, form button {
+  background-color: rgba(2, 79, 221, 0.384)
+}
+
+form input,
+form select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #016abb;
+}
+
+form button {
+  background: #016abb;
+  color: white;
+  font-weight: bold;
+  width: 50%;
+  padding: 0.8em;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  margin-top: 1em;
+}
+
+form button:hover {
+  background: #014e8c;
+}
+
+.abt {
+  width: 400px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); /* Slightly brighter for clarity */
+  border-radius: 12px;
+  border: 1px solid #e0e0e0; /* Subtle border for definition */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for pop */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin: 0 auto;
+}
+.abt:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.397); /* Stronger shadow on hover */
+}
+.abt p {
+    padding: 0.5em 2em 2em 2em;
+}
+
+.dentist-card {
+  width: 280px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #d0e8ff;
+  box-shadow: 0 8px 20px rgba(0, 106, 187, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Add hover effect to lift the card */
+.dentist-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 106, 187, 0.25);
+}
+
+.dentist-image {
+  height: 230px;
+  object-fit: cover;
+  width: 100%;
+  border-bottom: 4px solid #016abb;
+}
+
+.dentist-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.dentist-name {
+  color: #016abb;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.dentist-title {
+  color: #5a6a7a;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dentist-bio {
+  font-size: 0.95rem;
+  color: #2d3b50; /* Darker for readability */
+  line-height: 1.5; /* Increased for better readability */
+}
+
+.hero {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2em;
+   background: linear-gradient(135deg, #f5f3f3 0%, #f8fafc 100%); /* Slightly brighter for clarity */
+  border-radius: 12px;
+  border: 1px solid #e0e0e0; /* Subtle border for definition */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for pop */
+  
+}
+
+.hero h3 {
+  font-weight: 900;
+  font-size: 2.5em;
+  margin: 0.5em;
+  
+}
+.head {
+  width: 400px;
+  text-align: center;
+  font-size: 1.8em;
+  /* text-decoration: underline; */
+}
+.hero p {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes spinEase {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(180deg); /* halfway between 45 and 405 */
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: rotate(360deg); /* full spin + 45 degrees */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #101a22;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: 650px) {
+  
+  .team-grid {
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
+  }
+
+
+  .hero {
+    min-width: 420px;
+  }
+  
+  .head {
+    width: 600px;
+}
+
+  .appointmentDiv {
+    max-width: 420px;
+  }
+
+}
+
+@media (min-width: 900px) {
+    .team-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
