@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 
 export default function DentistCard({ name, title, image, bio }) {
   return (
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" className="dc">
         <div className="dentist-card" >
         <img src={image} alt={name} className="dentist-image" />
         <div className="dentist-card-content">

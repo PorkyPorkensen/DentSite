@@ -145,9 +145,12 @@ button:focus-visible {
   max-width: 1000px; /* roughly 3 cards wide with spacing */
   margin: 0 auto;
   padding: 2rem;
-  justify-content: center;
 }
 
+.dc {
+  display: flex;
+  justify-content: center;
+}
 .appointmentDiv, .hero {
   text-align: center;
   max-width: 320px;
