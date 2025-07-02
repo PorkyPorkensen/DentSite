@@ -14,10 +14,10 @@ export const team = [
     bio: "Dr. Alice Smith, with over 15 years of experience, leads our dental practice with a commitment to excellence in comprehensive dental care. Specializing in cosmetic and restorative dentistry, she ensures every patient leaves with a confident smile. In her free time, she loves gardening and supporting local community health initiatives.",
   },
   {
-    name: "Dr. John Doe",
+    name: "Dr. David Schwartz",
     title: "Orthodontist",
     image: johnImg,
-    bio: "Dr. John Doe brings 12 years of expertise in orthodontics, focusing on creating beautiful, functional smiles through advanced techniques like Invisalign and traditional braces. Outside the office, John is passionate about woodworking and volunteers at youth dental education programs.",
+    bio: "Dr. David Schwartz brings 12 years of expertise in orthodontics, focusing on creating beautiful, functional smiles through advanced techniques like Invisalign and traditional braces. Outside the office, David is passionate about woodworking and volunteers at youth dental education programs.",
   },
     {
     name: "Jared Calloway",
@@ -46,3 +46,7 @@ export const team = [
 ];
 
 export const bio = "Established in 2005, Barrie Family Dental has been proudly serving the Barrie community with compassionate, comprehensive dental care for nearly two decades. Our friendly and experienced team is committed to creating a comfortable environment where patients of all ages feel at ease. From routine cleanings to advanced procedures, we combine modern techniques with personalized care to keep your smile healthy and bright. At Barrie Family Dental, your oral health is our top priority."
+
+export const promos = [{key: 'CDCP', img:'https://images.unsplash.com/photo-1564420228450-d9a5bc8d6565?ixid=M3w3NTk1MDJ8MHwxfHNlYXJjaHwyfHxkZW50aXN0fGVufDB8MHx8fDE3NTE0NzQ1MTN8MA&ixlib=rb-4.1.0', desc: 'We are happy to announce that Barrie Dental is now accepting the Canadian Dental Care Plan (CDCP)!', btn: true },
+    {key: 'invisilign', desc:'Come join us July 14-18th for Invisilign Week!'}
+]

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
 
@@ -40,15 +41,19 @@ export default function Contact(){
     return (
         <div className='conPage' data-aos="fade-up">
             <h3 className='head'>Have any questions about your oral health?</h3>
-            <i class="fa-solid fa-face-laugh-beam"></i>
-            <div className="hero">
+            <DotLottieReact
+            src="https://lottie.host/4e60807d-11c2-4ab4-b7d4-f8af24919ebe/n05RcmyaIc.lottie"
+            loop
+            autoplay
+            />
+            <div className="hero call-box">
             <h3>Give us a call:</h3>
-            <p>(705) 999-9999</p>
+              <span>(705) 999-9999</span>
             </div>
         <div className='appointmentDiv'>
         <form onSubmit={handleSubmit} className="quote-form">
             <h3>Request an Appointment</h3>
-            <p>Please give us at least 2 business days notice for appointments</p>
+            <p>Please give us at least 2 business days notice for appointments. We will give you a call with our best accommodation.</p>
             <input name="name" type="text" placeholder="Name" required onChange={handleChange} />
             <input name="phone" type="text" placeholder="Your Phone Number" required onChange={handleChange} />
             <input name="email" type="email" placeholder="Email" required onChange={handleChange} />
